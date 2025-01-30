@@ -1,0 +1,71 @@
+{
+  "name": "avro-viewer",
+  "displayName": "Avro Viewer",
+  "publisher": "dev1ce",
+  "description": "View Avro Files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "icon": "images/logo/512/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Accel-Byte/Avro-Viewer.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "avro",
+    "avro viewer",
+    "avro table"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "avro-viewer.openAvroFile",
+        "title": "Open Avro File",
+        "category": "Avro Viewer"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "avro-viewer.openAvroFile",
+          "when": "resourceExtname == .avro",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "files": [
+    "build/assets/**/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd avroviwer-ui && npm install",
+    "start:webview": "cd avroviwer-ui && npm run start",
+    "build:webview": "cd avroviwer-ui && npm run build",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "avsc": "^5.7.7"
+  }
+}
