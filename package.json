@@ -1,9 +1,9 @@
 {
-  "name": "avro-viewer",
+  "name": "avroviewer",
   "displayName": "Avro Viewer",
   "publisher": "dev1ce",
   "description": "View Avro Files",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -25,7 +25,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "avro-viewer.openAvroFile",
+        "command": "avroviewer.openAvroFile",
         "title": "Open Avro File",
         "category": "Avro Viewer"
       }
@@ -33,7 +33,7 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "avro-viewer.openAvroFile",
+          "command": "avroviewer.openAvroFile",
           "when": "resourceExtname == .avro",
           "group": "navigation"
         }

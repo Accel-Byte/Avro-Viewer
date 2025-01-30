@@ -12,5 +12,4 @@ vsc-extension-quickstart.md
 **/.vscode-test.*
 avroviewer-ui/.gitignore
 avroviewer-ui/src/**
-node_modules
 avroviewer-ui/node_modules

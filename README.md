@@ -16,6 +16,7 @@ Avro Viewer is a VS Code extension that allows users to open Avro files and disp
 - **Streaming Support**: Handle larger Avro files efficiently.
 - **Additional Codec Support**: Support for multiple Avro compression codecs.
 - **Regex Queries**: Advanced search using regular expressions on Avro data.
+- **More Nested Records**: At present we are only supporting depth level 2 (i.e. only one nested record). Expand support for more depth.
 
 ## Installation
 
@@ -36,31 +37,31 @@ Avro Viewer is a VS Code extension that allows users to open Avro files and disp
 
 ### Avro viewer table
 
-![Avro viewer table](./images/avro%20viewer%20table.png)
+![Avro viewer table](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/avro-viewer-table.png?raw=true)
 
 ### Theme Switching
 
-![Rose Theme](./images/rose%20theme.png)
+![Rose Theme](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/rose-theme.png?raw=true)
 
 ### Dark Mode
 
-![Dark Mode](./images/dark%20mode.png)
+![Dark Mode](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/dark-mode.png?raw=true)
 
 ### Column Search
 
-![Specific Column Search](./images/specific%20column%20search.png)
+![Specific Column Search](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/specific-column-search.png?raw=true)
 
 ### Pagination
 
-![Pagination](./images/records%20with%20pagination.png)
+![Pagination](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/records-with-pagination.png?raw=true)
 
 ### Full Schema View
 
-![Schema Modal](./images/schema%20modal.png)
+![Schema Modal](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/schema-modal.png?raw=true)
 
 ### Full Schema Dark Mode
 
-![Schema Modal Dark Mode](./images/schema%20modal%20dark.png)
+![Schema Modal Dark Mode](https://github.com/Accel-Byte/Avro-Viewer/blob/main/images/schema-modal-dark.png?raw=true)
 
 ## Contributing
 

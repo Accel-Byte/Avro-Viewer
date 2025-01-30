@@ -50,7 +50,7 @@ function processAvroFile(filePath: string): Promise<{
 
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
-    "avro-viewer.openAvroFile",
+    "avroviewer.openAvroFile",
     async (uri: vscode.Uri) => {
       const fileUri = uri || (await getAvroFileUri());
       if (!fileUri) return;
