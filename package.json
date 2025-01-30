@@ -40,13 +40,10 @@
       ]
     }
   },
-  "files": [
-    "build/assets/**/*"
-  ],
   "scripts": {
-    "install:all": "npm install && cd avroviwer-ui && npm install",
-    "start:webview": "cd avroviwer-ui && npm run start",
-    "build:webview": "cd avroviwer-ui && npm run build",
+    "install:all": "npm install && cd avroviewer-ui && npm install",
+    "start:webview": "cd avroviewer-ui && npm run start",
+    "build:webview": "cd avroviewer-ui && npm run build",
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
@@ -57,7 +54,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "@types/vscode": "^1.96.0",
+    "@types/vscode": "^1.54.0",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
     "@vscode/test-cli": "^0.0.10",

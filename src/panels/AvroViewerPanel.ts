@@ -37,7 +37,7 @@ export class AvroViewerPanel {
           enableScripts: true,
           localResourceRoots: [
             Uri.joinPath(extensionUri, "out"),
-            Uri.joinPath(extensionUri, "avroviwer-ui/build"),
+            Uri.joinPath(extensionUri, "avroviewer-ui/build"),
           ],
           retainContextWhenHidden: true
         }
@@ -71,13 +71,13 @@ export class AvroViewerPanel {
 
   private _getWebviewContent(webview: Webview, extensionUri: Uri) {
     const stylesUri = getUri(webview, extensionUri, [
-      "avroviwer-ui",
+      "avroviewer-ui",
       "build",
       "assets",
       "index.css",
     ]);
     const scriptUri = getUri(webview, extensionUri, [
-      "avroviwer-ui",
+      "avroviewer-ui",
       "build",
       "assets",
       "index.js",

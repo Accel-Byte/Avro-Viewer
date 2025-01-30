@@ -6,6 +6,11 @@ src/**
 vsc-extension-quickstart.md
 **/tsconfig.json
 **/eslint.config.mjs
+**/eslint.config.js
 **/*.map
 **/*.ts
 **/.vscode-test.*
+avroviewer-ui/.gitignore
+avroviewer-ui/src/**
+node_modules
+avroviewer-ui/node_modules
